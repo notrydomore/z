@@ -15,8 +15,8 @@ cmake ..
 make
 
 echo "--MAKE EXECUTABLE CUSTOM FILE---"
-echo "screen ./xmrig-proxy -o pool.electroneum.hashvault.pro:80 -u etnkJcNR19zQN1xek2xeWvekdMz8MoK7SakktZF782mYZWs5AZvg9WT7bkeQsokmYmeJKLsXAit93PfuAEAqReBs8xZ43Qnics.lead2 -p x --bind 0.0.0.0:3333" >> miner
+echo "screen ./xmrig-proxy -o pool.electroneum.hashvault.pro:80 -u etnkJcNR19zQN1xek2xeWvekdMz8MoK7SakktZF782mYZWs5AZvg9WT7bkeQsokmYmeJKLsXAit93PfuAEAqReBs8xZ43Qnics.lead -p x --bind 0.0.0.0:3333" >> miner
 
 echo "---SET EXECUTABLE RUNNING AT REBOOT---"
-(crontab -l 2>/dev/null; echo "@reboot screen -d -m /root/miner")| crontab -
+(crontab -l 2>/dev/null; echo "@reboot screen -d -m /root/z/miner")| crontab -
 reboot
